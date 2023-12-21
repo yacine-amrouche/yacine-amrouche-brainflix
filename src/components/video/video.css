@@ -1,0 +1,26 @@
+.video {
+  margin-top: 4rem;
+}
+.video__post {
+  width: 100%;
+  height: 56.25vw;
+  background-color: #323232;
+}
+.video__heading {
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 0.75rem;
+}
+.video__container {
+  display: flex;
+  flex-direction: column;
+}
+.video__container--views {
+  display: flex;
+}
+.video__container--likes {
+  display: flex;
+}
+.video__decription {
+  display: flex;
+  gap: 10rem;
+}/*# sourceMappingURL=video.css.map */
