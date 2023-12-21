@@ -1,0 +1,80 @@
+@use "../../styles/partials/variables" as *;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    &__logo{
+        width: 200px;
+        height: 50px;
+        margin: 1rem 0 1rem 19rem;
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        &--search{
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            background-color:$backcolorw2;
+            width: 633px;
+            border: 2px solid $backcolor2;
+            margin-right: 2rem;  
+            font-size: 20px;
+         
+            .search--img{
+                padding-left: 10px;
+            }
+            .search--input{
+                width: 100%;
+                margin-left: 14px;
+                outline: none;
+                border: none;
+                background: transparent;
+                margin-right: 4px;
+                font-size: 20px;
+                
+            }
+    }
+    &--btn{
+        width: 100%;
+        height: 30px;
+       align-items: center;
+       margin-top: 1rem;
+
+        .btn--upload{
+            width: 100%;
+            height: 70px;
+            color: white;
+            background-color: $brainflix-bleu;
+            border: 2px solid $brainflix-bleu;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+
+            
+        }
+        .btn--img{
+           position: relative;
+           right: 19rem;
+        }
+    }
+   
+}
+}
+.avatar--img{   
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+}
+
+
+
+
+
+
