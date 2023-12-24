@@ -1,9 +1,9 @@
 
 import './App.css';
-import Header from './components/Header/Header';
+import Header from './components/header/Header';
 import Video from './components/Video/Video';
-import CommentsForm from './components/Commentsform/CommentsForm';
-import CommentsSection from './components/ CommentsList/CommentsList';
+import CommentsForm from './components/CommentsForm/CommentsForm';
+
 
 function App() {
   return (
@@ -11,8 +11,6 @@ function App() {
    <Header />
    <Video />
    <CommentsForm />
-   <CommentsSection />
-  
    </>
   );
 }
