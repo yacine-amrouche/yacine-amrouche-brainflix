@@ -1,0 +1,51 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+
+
+
+.form{
+    display: flex;
+    align-items: center;
+    &__container{
+        width: 100%;
+        padding-left: 1rem;
+        padding-top: 4rem;
+    }
+    &__img{
+        @include avatar;
+        
+    }
+    &__heading{
+        color: $silver;
+    }
+    &__input{
+        border: 1px solid $mercury;
+        border-radius: 4px;
+        resize: none;
+        width: 100%;
+        height: 100px;
+        
+    }
+    &__button{
+        width: 100%;
+        height: 70px;
+        color: white;
+        background-color: $brainflix-bleu;
+        border: 2px solid $brainflix-bleu;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        .btn--img{
+            position: relative;
+            right: 18rem;
+        }
+    }
+
+}
+.form__comment{
+    display: flex;
+    align-items: center;
+}
