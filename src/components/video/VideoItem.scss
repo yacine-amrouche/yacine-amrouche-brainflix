@@ -1,0 +1,15 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.video__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.video__img{
+    width: 100px;
+    height: 50px;
+}

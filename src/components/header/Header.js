@@ -10,7 +10,7 @@ function Header() {
 
       <div className="header__container">
         <div className="header__container--search">
-          <img className="search--img" src={search}></img>
+          <img className="search--img" src={search} alt="user-search"></img>
           <input
             type="text"
             placeholder="Search"
@@ -22,7 +22,7 @@ function Header() {
         </div>
         <div className="header__container--btn">
           <button className="btn--upload">
-          <img src={upload} className="btn--img"></img> 
+          <img src={upload} className="btn--img" alt="user-upload"></img> 
           UPLOAD
           </button>
         </div>

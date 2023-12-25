@@ -1,18 +1,23 @@
 
 import './App.css';
-import Header from './components/Header/Header';
-import Video from './components/Video/Video';
-import CommentsForm from './components/Commentsform/CommentsForm';
-import CommentsSection from './components/ CommentsList/CommentsList';
+//import  { useState } from "react";
+import Header from './components/header/Header';
+import VideoSelected from './components/video/VideoSelected';
+import CommentsForm from './components/CommentsForm/CommentsForm';
+import CommentsList from './components/ CommentsList/CommentsList';
+import VideoList from './components/video/VideoList';
+import Videos from './Assets/Data/video-details.json';
 
 function App() {
+  //const [selectedVideo, setSelectedVideo] = useState(Videos)
   return (
    <>
    <Header />
-   <Video />
+   <VideoSelected Videos={Videos}/>
    <CommentsForm />
-   <CommentsSection />
-  
+   <CommentsList />
+   <VideoList Videos={Videos} />
+
    </>
   );
 }
