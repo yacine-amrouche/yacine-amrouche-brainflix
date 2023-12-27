@@ -2,45 +2,66 @@
 @use "../../styles/partials/mixin" as *;
 
 
-
+.form__number{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+    
+}
 .form{
+    padding-top: -2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: flex;
     align-items: center;
     &__container{
         width: 100%;
         padding-left: 1rem;
-        padding-top: 4rem;
+        
     }
     &__img{
         @include avatar;
+        margin-top: -7rem;
+        margin-right: 1rem;
         
     }
     &__heading{
         color: $silver;
+       font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
     }
     &__input{
         border: 1px solid $mercury;
-        border-radius: 4px;
+        border-radius: 8px;
         resize: none;
         width: 100%;
-        height: 100px;
+        height: 180px;
+        background-color: $backcolorw2;
+        padding: 1.5rem 0 0 1.5rem;
+       
         
     }
     &__button{
         width: 100%;
-        height: 70px;
-        color: white;
+        height: 80px;
+        color: $white1;
         background-color: $brainflix-bleu;
         border: 2px solid $brainflix-bleu;
-        border-radius: 5px;
+        border-radius: 8px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        
         .btn--img{
             position: relative;
-            right: 18rem;
+            right: 13rem;
+            width: 40px;
         }
     }
 

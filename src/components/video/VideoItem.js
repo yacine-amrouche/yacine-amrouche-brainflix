@@ -2,6 +2,8 @@ import './VideoItem.scss';
 
 function VideoItem({image, title, channel, handel}){
     return(
+        <>
+       
         <div className="video__list" onClick={handel}>
             <div className='video__list--img'>
                  <img className="video__img" src={image} alt="user_video"></img>
@@ -13,6 +15,7 @@ function VideoItem({image, title, channel, handel}){
 
             </div>
         </div>
+        </>
     )
 };
 

@@ -22,8 +22,8 @@ function Header() {
         </div>
         <div className="header__container--btn">
           <button className="btn--upload">
-          <img src={upload} className="btn--img" alt="user-upload"></img> 
-          UPLOAD
+            <img src={upload} className="btn--img" alt="user-upload"></img>
+            UPLOAD
           </button>
         </div>
       </div>

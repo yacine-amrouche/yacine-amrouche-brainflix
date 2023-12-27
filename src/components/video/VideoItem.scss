@@ -5,11 +5,39 @@
     text-decoration: none;
 }
 .video__list{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    &--img{
+        .video__img{
+            background-color: $mercury;
+            width: 25vw;
+            height: 15vh;
+            border-radius: 4px;
+        }
+    }
+    &--info{
+        padding-left: 1rem;
+        .video__title{
+            font-weight: 700;
+            font-size: 18px;
+            color: $brainflix-black2;
+            
+            
+        }
+        .video__channel{
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 400;
+        }
+    }
 }
-.video__img{
-    width: 100px;
-    height: 50px;
-}
+
+
+
+
+
+
+

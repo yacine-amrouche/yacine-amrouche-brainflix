@@ -6,17 +6,16 @@ function CommentsForm(){
     let commentNumber = 3;
     return(
         <section className='form_section'>
-            <h2 className='form__number'>{commentNumber} comments </h2>
+            <h2 className='form__number'>{commentNumber} Comments </h2>
             <form className='form'>
-                
                 <img src={avatar} className='form__img' alt='user__img'></img>
                 <div className='form__container'>
-                    <p className='form__heading'>Join the conversation</p>
+                    <p className='form__heading'>JOIN THE CONVERSATION</p>
                     <textarea className='form__input'placeholder='Add a new comment'>
                     </textarea>
                     <button className='form__button'>
                         <img src={plus} alt='user plus' className='btn--img'></img>
-                    Comment
+                    COMMENT
                     </button>
                 </div>
             </form>

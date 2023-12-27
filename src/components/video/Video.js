@@ -10,7 +10,7 @@ function video ({title, channel, video, timestamp, likes, views, description, im
             <h1 className='video__heading'>{title}</h1>
             <div className='video__decription'>
                 <div className='video__container'>
-                    <p className='video__maker'>{channel}</p>
+                    <p className='video__maker'>By {channel}</p>
                     <p className='video__date'>{timestamp}</p>
                 </div>
                 <div className='video__container'>

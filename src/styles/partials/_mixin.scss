@@ -3,3 +3,19 @@
     height: 4rem;
     border-radius: 50%;
 }
+@mixin header-mobile{
+    font-size: 28px;
+    line-height: 32px;
+}
+@mixin section-mobile{
+    font-size: 12px;
+    line-height: 20px;
+}
+@mixin sub-mobile{
+    font-size: 13px;
+    line-height: 18px;
+}
+@mixin body-mobile{
+    font-size: 13px;
+    line-height: 18px;
+}

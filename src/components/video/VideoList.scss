@@ -1,0 +1,12 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.videolist__header{
+    color: $silver;
+    margin-left: 1rem;
+    border-top: 3px solid $mercury;
+    padding-top: 2rem;
+}

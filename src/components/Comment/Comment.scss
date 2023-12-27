@@ -1,0 +1,45 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.comment{
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-top: 3px solid $mercury;
+    
+    &__img{
+        margin-top: 0.8rem;
+        width: 5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: $mercury;
+    }
+    &__container{
+        padding-left: 1rem;
+        .comment__header{
+            display: flex;
+            flex-direction: row;
+           justify-content: space-between;
+           .comment__name{
+            font-weight: 700;
+            font-size: 18px;
+            color: $brainflix-black2;
+           }
+           .comment__date{
+            color: $silver;
+           }
+        }
+        .comment__text{
+            font-size: 14px;
+            line-height: 32px;
+            font-weight: 500;
+            margin-top: -0.5rem;
+        }
+    }
+
+}
+
