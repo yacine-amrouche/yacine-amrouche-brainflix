@@ -1,21 +1,29 @@
-import Video from '../video/Video';
+import Video from '../Video/Video';
+import CommentsForm from '../CommentsForm/CommentsForm';
+import CommentsList from '../ CommentsList/CommentsList';
 
-function VideoSelected({Videos}){
+function VideoSelected({videoItem}){
+    const {video, title, channel, views, description, timestamp, likes, image, comments} = videoItem;
     return(
+        <>
         <div className='video__selected'>
-            {Videos.map((video) =>
+            
             <Video
-            video= {video.video}
-            title= {video.title}
-            channel= {video.channel}
-            views= {video.views}
-            description={video.description}
-            timestamp={video.timestamp}
-            likes={video.likes}
-
+            video= {video}
+            title= {title}
+            channel= {channel}
+            views= {views}
+            description={description}
+            timestamp={timestamp}
+            likes={likes}
+            image={image}
             />
-            )}
+            
+            
         </div>
+         <CommentsForm />
+         <CommentsList comments={comments} />
+         </>
      
 
 

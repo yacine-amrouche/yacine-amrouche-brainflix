@@ -1,15 +1,18 @@
 import './VideoList.scss';
-import VideoItem from '../video/VideoItem';
-function VideoList({Videos}) {
+import VideoItem from '../Video/VideoItem';
+function VideoList({remain, handelClick}) {
+    
     
     return (
         <div className='video__list'>
-           {Videos.map((video) => 
+           {remain.map((video) => 
             <VideoItem
+                key={video.id}
                 image= {video.image}
                 title= {video.title}
                channel= {video.channel}
-                
+               handel={() => handelClick(video)}
+              
             />
             )}
         </div>

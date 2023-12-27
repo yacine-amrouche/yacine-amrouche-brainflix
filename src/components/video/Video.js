@@ -2,10 +2,11 @@ import './Video.scss';
 import heart from '../../Assets/Icons/likes.svg';
 import eye from '../../Assets/Icons/views.svg';
 
-function video ({title, channel, video, timestamp, likes, views, description}) {
+function video ({title, channel, video, timestamp, likes, views, description, image, comments}) {
     return (
         <section className='video'>
-            <video className='video__post' controls poster={video}></video>
+            {/*<video className='video__post' controls poster={video}></video>*/}
+            <img className='video__post' src={image} alt='user_view'></img>
             <h1 className='video__heading'>{title}</h1>
             <div className='video__decription'>
                 <div className='video__container'>
