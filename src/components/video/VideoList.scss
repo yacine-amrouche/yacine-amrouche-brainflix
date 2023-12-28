@@ -11,4 +11,9 @@
     margin-left: 1rem;
     border-top: 3px solid $mercury;
     padding-top: 2rem;
+    @include tablet{
+        
+        margin-left: 2.25rem;
+        margin-right: 2,25rem;
+      }
 }

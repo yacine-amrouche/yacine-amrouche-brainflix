@@ -14,7 +14,10 @@
     @include mobile-min{
         font-size: 18px;
     }
-    
+    @include tablet{
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+    }
 }
 .form{
     padding-top: -2rem;
@@ -22,9 +25,29 @@
     margin-right: 1rem;
     display: flex;
     align-items: center;
+    @include tablet{
+       display: flex;
+       flex-direction: row;
+       gap: 1rem;
+       margin-left: 2.25rem;
+       margin-right: 2.25rem;
+       margin-top: 4rem;
+    }
+    
+   
+  
     &__container{
         width: 100%;
         padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+        }
+
+     
         
     }
     &__img{
@@ -34,6 +57,14 @@
         @include mobile-min{
             margin-top: -9rem;
         }
+        @include tablet{
+            margin-top: 0rem;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+
+        }
+
         
     }
     &__heading{
@@ -43,6 +74,10 @@
         margin-bottom: 0.7rem;
         @include mobile-min{
             font-size: 12px;
+        }
+        @include tablet{
+           position: absolute;
+           top: 89rem;
         }
     }
     &__input{
@@ -57,7 +92,9 @@
         @include mobile-min{
             height: 120px;
         }
-       
+        @include tablet{
+            height: 90px;
+        }
         
     }
     &__button{
@@ -78,6 +115,12 @@
         @include mobile-min{
             font-size: 18px;
         }
+        @include tablet{
+            width: 500px;
+            height: 90px;
+            margin-top: 0rem;
+        }
+        
         
         .btn--img{
             position: relative;
@@ -87,6 +130,13 @@
                 width: 20px;
                 right: 1rem;
             }
+            @include tablet{
+                position: relative;
+                right: 3rem;
+                width: 40px;
+              
+            }
+            
         }
     }
 
@@ -96,3 +146,10 @@
         font-size: 14px;
     }
 }
+
+
+
+
+
+
+

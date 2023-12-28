@@ -8,11 +8,15 @@ function CommentsForm(){
         <section className='form_section'>
             <h2 className='form__number'>{commentNumber} Comments </h2>
             <form className='form'>
-                <img src={avatar} className='form__img' alt='user__img'></img>
+                <div className='form__contianer'>
+                    <img src={avatar} className='form__img' alt='user__img'></img>
+                </div>
                 <div className='form__container'>
-                    <p className='form__heading'>JOIN THE CONVERSATION</p>
-                    <textarea className='form__input'placeholder='Add a new comment'>
-                    </textarea>
+                   
+                        <p className='form__heading'>JOIN THE CONVERSATION</p>
+                        <textarea className='form__input'placeholder='Add a new comment'>
+                        </textarea>
+                   
                     <button className='form__button'>
                         <img src={plus} alt='user plus' className='btn--img'></img>
                     COMMENT

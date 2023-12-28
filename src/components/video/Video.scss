@@ -20,13 +20,21 @@
         margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 1rem;
-        border-bottom: 3px solid $mercury;
         padding-left: 1rem;
-        padding-bottom: 2rem;
+        
         font-size: 52px;
         color: $brainflix-black1;
+        @include mobile{
+            border-bottom: 3px solid $mercury;
+            padding-bottom: 2rem;
+        }
         @include mobile-min{
             font-size: 24px;
+        }
+        @include tablet{
+            margin-left: 2.25rem;
+            margin-right: 2.25rem;
+
         }
     }
     &__container{
@@ -40,6 +48,13 @@
         @include mobile-min{
            font-size: 14px;
          }
+         @include tablet{
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            margin-top: -2.5rem;
+
+        }
         
         .video__maker{
             font-weight: 700;
@@ -91,6 +106,13 @@
             margin-right: auto;
            
          }
+         @include tablet{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 2.25rem;
+            margin-right: 2.25rem;
+           
+         }
 
     }
  
@@ -107,5 +129,8 @@
        font-size: 14px;
        line-height: 22px;
      }
-    
+     @include tablet{
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+      }
 }

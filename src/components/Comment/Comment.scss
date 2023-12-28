@@ -12,6 +12,11 @@
     margin-right: 1rem;
     margin-top: 1rem;
     border-top: 3px solid $mercury;
+    @include tablet{
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+    }
+
     
     &__img{
         margin-top: 1rem;
@@ -26,6 +31,7 @@
     }
     &__container{
         padding-left: 1rem;
+      
         .comment__header{
             display: flex;
             flex-direction: row;
@@ -37,6 +43,11 @@
             @include mobile-min{
                font-size: 12px;
             }
+            @include tablet{
+                font-weight: 700;
+                font-size: 20px;
+            }
+    
            }
            .comment__date{
             color: $silver;
@@ -54,6 +65,10 @@
             @include mobile-min{
                 font-size: 12px;
              }
+             @include tablet{
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
     }
 
