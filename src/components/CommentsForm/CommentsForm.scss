@@ -2,10 +2,18 @@
 @use "../../styles/partials/mixin" as *;
 
 
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    @include font-face;
+}
 .form__number{
     margin-left: 1rem;
     margin-right: 1rem;
     padding-top: 1rem;
+    @include mobile-min{
+        font-size: 18px;
+    }
     
 }
 .form{
@@ -21,8 +29,11 @@
     }
     &__img{
         @include avatar;
-        margin-top: -7rem;
+        margin-top: -11rem;
         margin-right: 1rem;
+        @include mobile-min{
+            margin-top: -9rem;
+        }
         
     }
     &__heading{
@@ -30,6 +41,9 @@
        font-size: 24px;
         font-weight: 600;
         margin-bottom: 0.7rem;
+        @include mobile-min{
+            font-size: 12px;
+        }
     }
     &__input{
         border: 1px solid $mercury;
@@ -39,6 +53,10 @@
         height: 180px;
         background-color: $backcolorw2;
         padding: 1.5rem 0 0 1.5rem;
+        font-weight: 500;
+        @include mobile-min{
+            height: 120px;
+        }
        
         
     }
@@ -57,16 +75,24 @@
         font-weight: bold;
         margin-bottom: 1rem;
         margin-top: 2rem;
+        @include mobile-min{
+            font-size: 18px;
+        }
         
         .btn--img{
             position: relative;
             right: 13rem;
             width: 40px;
+            @include mobile-min{
+                width: 20px;
+                right: 1rem;
+            }
         }
     }
 
 }
-.form__comment{
-    display: flex;
-    align-items: center;
+::placeholder{
+    @include mobile-min{
+        font-size: 14px;
+    }
 }

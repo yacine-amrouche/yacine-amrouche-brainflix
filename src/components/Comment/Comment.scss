@@ -1,8 +1,10 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixin" as *;
+
 * {
     box-sizing: border-box;
     text-decoration: none;
+    @include font-face;
 }
 .comment{
     display: flex;
@@ -12,11 +14,15 @@
     border-top: 3px solid $mercury;
     
     &__img{
-        margin-top: 0.8rem;
-        width: 5rem;
-        height: 3.5rem;
+        margin-top: 1rem;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         background-color: $mercury;
+        @include mobile-min{
+            width: 120px;
+            height: 50px; 
+        }
     }
     &__container{
         padding-left: 1rem;
@@ -28,16 +34,26 @@
             font-weight: 700;
             font-size: 18px;
             color: $brainflix-black2;
+            @include mobile-min{
+               font-size: 12px;
+            }
            }
            .comment__date{
             color: $silver;
+            @include mobile-min{
+                font-size: 12px;
+             }
            }
         }
         .comment__text{
             font-size: 14px;
-            line-height: 32px;
+            line-height: 20px;
             font-weight: 500;
             margin-top: -0.5rem;
+            color: $brainflix-black2;
+            @include mobile-min{
+                font-size: 12px;
+             }
         }
     }
 

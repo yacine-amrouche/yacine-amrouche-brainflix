@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    @include font-face;
 }
 .header{
     margin-left: 2rem;
@@ -10,7 +11,10 @@
     &__logo{
         width: 210px;
         height: 50px;
-        margin: 1rem 0 1rem 19rem;
+        margin: 1rem 0 1rem 15rem;
+        @include mobile-min{
+            margin: 1rem 0 1rem 1rem;
+        }
     }
     &__container{
         display: flex;
@@ -25,7 +29,9 @@
             border: 2px solid $backcolor2;
             margin-right: 2rem;  
             font-size: 20px;
-            
+            @include mobile-min{
+                width: 150px;
+            }
             
          
             .search--img{

@@ -1,4 +1,10 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    @include font-face;
+}
 
 .video{
     margin-top: 2rem;
@@ -19,6 +25,9 @@
         padding-bottom: 2rem;
         font-size: 52px;
         color: $brainflix-black1;
+        @include mobile-min{
+            font-size: 24px;
+        }
     }
     &__container{
         display: flex;
@@ -28,6 +37,10 @@
         margin-right: 2rem;
         margin-top: -1.5rem;
         margin-bottom: 0.5rem;
+        @include mobile-min{
+           font-size: 14px;
+         }
+        
         .video__maker{
             font-weight: 700;
         }
@@ -39,16 +52,25 @@
             display: flex;
             .views--img{
                 width: 45px;
+                @include mobile-min{
+                    width: 25px;
+                 }
+                
             }
             .views--number{
                 color: $silver;
                 padding-left: 1rem;
             }
+           
         }
         &--likes{
             display: flex;
             .likes--img{
                 width: 45px;
+                @include mobile-min{
+                    width: 25px;
+                 }
+                
             }
             .likes--number{
                 color: $silver;
@@ -63,6 +85,12 @@
         margin-left: 1rem;
         margin-right: 1rem;
         border-bottom: 3px solid $mercury;
+        @include mobile-min{
+            gap: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+           
+         }
 
     }
  
@@ -74,4 +102,10 @@
     margin-top: 1.5rem;
     font-size: 24px;
     line-height: 32px;
+    font-weight: 500;
+    @include mobile-min{
+       font-size: 14px;
+       line-height: 22px;
+     }
+    
 }
