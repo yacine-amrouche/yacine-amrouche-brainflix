@@ -13,6 +13,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    width: 100%;
     @include tablet{
         
         margin-left: 1rem;

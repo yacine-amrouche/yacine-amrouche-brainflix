@@ -20,13 +20,17 @@
     
     &__img{
         margin-top: 1rem;
-        width: 50px;
-        height: 50px;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         background-color: $mercury;
         @include mobile-min{
             width: 120px;
             height: 50px; 
+        }
+        @include tablet{
+            width: 5rem;
+            height: 5rem; 
         }
     }
     &__container{

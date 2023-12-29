@@ -28,6 +28,7 @@
     @include tablet{
        display: flex;
        flex-direction: row;
+       align-items: flex-end;
        gap: 1rem;
        margin-left: 2.25rem;
        margin-right: 2.25rem;
@@ -44,6 +45,7 @@
         @include tablet{
             display: flex;
             flex-direction: row;
+            align-items: flex-end;
             gap: 3rem;
         }
 
@@ -75,10 +77,7 @@
         @include mobile-min{
             font-size: 12px;
         }
-        @include tablet{
-           position: absolute;
-           top: 89rem;
-        }
+   
     }
     &__input{
         border: 1px solid $mercury;
@@ -94,6 +93,7 @@
         }
         @include tablet{
             height: 90px;
+            width: 631px;
         }
         
     }
@@ -116,9 +116,10 @@
             font-size: 18px;
         }
         @include tablet{
-            width: 500px;
+            width: 400px;
             height: 90px;
             margin-top: 0rem;
+            margin-bottom: 0.5rem;
         }
         
         
