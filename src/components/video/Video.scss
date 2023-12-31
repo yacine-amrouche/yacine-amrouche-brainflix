@@ -36,6 +36,11 @@
             margin-right: 2.25rem;
 
         }
+        @include desktop{
+            font-size: 40px;
+            margin-left: 2.25rem;
+            margin-right: 0rem;
+        }
     }
     &__container{
         display: flex;
@@ -53,6 +58,10 @@
             flex-direction: row;
             gap: 3rem;
             margin-top: -2.5rem;
+            @include desktop{
+                font-size: 18px;
+                align-items: center;
+            }
 
         }
         
@@ -70,6 +79,10 @@
                 @include mobile-min{
                     width: 25px;
                  }
+                 @include desktop{
+                    width: 35px;
+                    
+                 }
                 
             }
             .views--number{
@@ -85,6 +98,10 @@
                 @include mobile-min{
                     width: 25px;
                  }
+                 @include desktop{
+                    width: 35px;
+                 }
+                
                 
             }
             .likes--number{
@@ -112,6 +129,10 @@
             margin-left: 2.25rem;
             margin-right: 2.25rem;
            
+         }
+         @include desktop{
+            margin-left: 2.25rem;
+            margin-right: 0rem;
          }
 
     }

@@ -9,14 +9,14 @@ function VideoSelected({videoItem}){
         <div className='video__selected'>
             
             <Video
-            video= {video}
-            title= {title}
-            channel= {channel}
-            views= {views}
-            description={description}
-            timestamp={timestamp}
-            likes={likes}
-            image={image}
+                video= {video}
+                title= {title}
+                channel= {channel}
+                views= {views}
+                description={description}
+                timestamp={timestamp}
+                likes={likes}
+                image={image}
             />
             
             

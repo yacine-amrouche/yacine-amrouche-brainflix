@@ -5,10 +5,6 @@ import eye from '../../Assets/Icons/views.svg';
 function video ({title, channel, video, timestamp, likes, views, description, image, comments}) {
     return (
         <section className='video'>
-            <video width="100%" height="500" controls >
-                    <source src={video} type="video/mp4"/>
-                    <img className='video__post' src={image} alt='user_view'></img>
-            </video>
             
             <h1 className='video__heading'>{title}</h1>
             <div className='video__decription'>

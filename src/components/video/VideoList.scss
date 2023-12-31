@@ -12,8 +12,19 @@
     border-top: 3px solid $mercury;
     padding-top: 2rem;
     @include tablet{
-        
         margin-left: 2.25rem;
         margin-right: 2,25rem;
+      }
+      @include desktop{
+        border-top: none;
+        border-left: 3px solid $mercury;
+        margin-left: 0rem;
+        margin-right: 2,25rem;
+        margin-bottom: 0rem;
+        padding-bottom: 1rem;
+        margin-top: 0rem;
+        padding-left: 2rem;
+
+       
       }
 }

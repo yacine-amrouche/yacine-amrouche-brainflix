@@ -1,0 +1,29 @@
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/mixin" as *;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    @include font-face;
+}
+
+.app__main{
+    
+    @include desktop{
+        display: flex;
+        &-selected{
+            width: 70%;
+        }
+        &-list{
+            width: 25%;
+        }
+        
+    }
+    
+
+  
+}
+.app__post{
+    width: 100%;
+}
+
+

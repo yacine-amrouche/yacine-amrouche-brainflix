@@ -16,6 +16,10 @@
         margin-left: 2.25rem;
         margin-right: 2.25rem;
     }
+    @include desktop{
+        margin-left: 2.25rem;
+        margin-right: 0rem;
+    }
 
     
     &__img{
@@ -31,6 +35,10 @@
         @include tablet{
             width: 5rem;
             height: 5rem; 
+        }
+        @include desktop{
+            width: 4rem;
+            height: 4rem;
         }
     }
     &__container{
