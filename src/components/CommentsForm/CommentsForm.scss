@@ -25,7 +25,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
-    align-items: center;
+   
     @include tablet{
        display: flex;
        flex-direction: row;
@@ -56,7 +56,7 @@
     }
     &__img{
         @include avatar;
-        margin-top: -11rem;
+        margin-top: 5rem;
         margin-right: 1rem;
         @include mobile-min{
             margin-top: -9rem;
