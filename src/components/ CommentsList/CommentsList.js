@@ -9,7 +9,7 @@ function CommentsList({comments}){
             <Comment
                 key= {comment.id}
                 name= {comment.name}
-                timestamp= {comment.timestamp}
+                timestamp= {new Date(comment.timestamp).toDateString()}
                 comment= {comment.comment}
             />
             )}

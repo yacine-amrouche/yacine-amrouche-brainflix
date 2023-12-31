@@ -14,7 +14,7 @@ function VideoSelected({videoItem}){
                 channel= {channel}
                 views= {views}
                 description={description}
-                timestamp={timestamp}
+                timestamp={new Date(timestamp).toDateString()}
                 likes={likes}
                 image={image}
             />
