@@ -43,6 +43,10 @@
     }
     &__container{
         padding-left: 1rem;
+        @include desktop{
+            padding-right: 1rem;
+        }
+
       
         .comment__header{
             display: flex;
@@ -59,7 +63,7 @@
                 font-weight: 700;
                 font-size: 20px;
             }
-    
+           
            }
            .comment__date{
             color: $silver;
