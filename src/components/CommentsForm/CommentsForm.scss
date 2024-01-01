@@ -18,6 +18,11 @@
         margin-left: 2.25rem;
         margin-right: 2.25rem;
     }
+    @include tablet{
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        @include desktop-sub
+    }
 }
 .form{
     width: 100%;
@@ -69,8 +74,8 @@
 
         }
         @include desktop{
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
             border-radius: 50%;
         }
 
@@ -83,6 +88,9 @@
         margin-bottom: 0.7rem;
         @include mobile-min{
             font-size: 12px;
+        }
+        @include desktop{
+            @include desktop-button;
         }
    
     }
@@ -104,7 +112,9 @@
         }
         @include desktop{
             width: 410px;
-            height: 75px;
+            height: 60px;
+            padding: 1rem 0 0 1.5rem;
+            
         }
         
     }
@@ -134,7 +144,8 @@
         }
         @include desktop{
             width: 250px;
-            height: 75px;
+            height: 60px;
+            @include desktop-button;
         }
         
         
@@ -154,6 +165,7 @@
             }
             @include desktop{
                 right: 1rem;
+                width: 30px;
             }
             
         }
@@ -161,8 +173,10 @@
 
 }
 ::placeholder{
+    color: $brainflix-black1;
     @include mobile-min{
         font-size: 14px;
+        
     }
 }
 

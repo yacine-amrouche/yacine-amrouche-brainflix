@@ -31,14 +31,17 @@
         @include mobile-min{
             width: 120px;
             height: 50px; 
+            border-radius: 50%;
         }
         @include tablet{
             width: 5rem;
             height: 5rem; 
+            border-radius: 50%;
         }
         @include desktop{
-            width: 4rem;
-            height: 4rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
         }
     }
     &__container{
@@ -55,7 +58,7 @@
            .comment__name{
             font-weight: 700;
             font-size: 18px;
-            color: $brainflix-black2;
+            color: $brainflix-black1;
             @include mobile-min{
                font-size: 12px;
             }
@@ -77,13 +80,16 @@
             line-height: 20px;
             font-weight: 500;
             margin-top: -0.5rem;
-            color: $brainflix-black2;
+            color: $brainflix-black1;
             @include mobile-min{
                 font-size: 12px;
              }
              @include tablet{
                 font-size: 18px;
                 line-height: 24px;
+            }
+            @include desktop{
+               @include desktop-body;
             }
         }
     }

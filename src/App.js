@@ -17,7 +17,9 @@ function App() {
    <>
   
    <Header />
-   <video className='app__post' width="100%" height="100%" controls poster={selectedVideo.image}></video>
+   <div className='app__video'>
+        <video className='app__post' controls poster={selectedVideo.image}></video>
+    </div>
    <div className='app__main'>
         <div className='app__main-selected'><VideoSelected  videoItem={selectedVideo}/></div>
         <div className='app__main-list'><VideoList handelClick={setSelectedVideo} remain={remainVideos}/></div>

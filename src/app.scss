@@ -23,7 +23,33 @@
   
 }
 .app__post{
-    width: 100%;
+    @include tablet{
+        width: 94%;
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+      
+
+      
+    }
+    @include desktop{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+  
+}
+.app__video{
+    @include tablet{
+        background-color: $brainflix-black2;
+        width: 100%;
+       
+    }
+    @include desktop{
+        background-color: $brainflix-black2;
+       
+    }
+
 }
 
 
