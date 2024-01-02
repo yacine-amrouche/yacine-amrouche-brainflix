@@ -17,15 +17,18 @@
     @include tablet{
         margin-left: 2.25rem;
         margin-right: 2.25rem;
+        font-size: 24px;
+        
     }
     @include tablet{
         margin-left: 2.25rem;
         margin-right: 2.25rem;
-        @include desktop-sub
+        font-size: 20px;
+        
     }
 }
 .form{
-    width: 100%;
+  
     padding-top: -2rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -40,6 +43,9 @@
        margin-right: 2.25rem;
        margin-top: 4rem;
     }
+    @include tablet{
+        margin-top: 0rem;
+     }
    
     
    
