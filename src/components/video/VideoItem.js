@@ -1,20 +1,24 @@
 import './VideoItem.scss';
+import { Link } from 'react-router-dom';
 
-function VideoItem({image, title, channel, handel}){
+function VideoItem({video}){ //handel ,line 9 onClick={handel}
+    
     return(
         <>
        
-        <div className="video__list" onClick={handel}>
-            <div className='video__list--img'>
-                 <img className="video__img" src={image} alt="user_video"></img>
-            </div>
-            
-            <div className="video__list--info">
-                <p className="video__title">{title}</p>
-                <p className="video__channel">{channel}</p>
+        <Link to={`/video/${video.id}`}
+                className="video__list" >  
+                <div className='video__list--img'>
+                    <img className="video__img" src={video.image} alt="user_video"></img>
+                </div>
+                
+                <div className="video__list--info">
+                    <p className="video__title">{video.title}</p>
+                    <p className="video__channel">{video.channel}</p>
 
-            </div>
-        </div>
+                </div>
+        
+        </Link>
         </>
     )
 };

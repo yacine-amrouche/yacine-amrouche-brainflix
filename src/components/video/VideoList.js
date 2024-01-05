@@ -1,7 +1,7 @@
 import './VideoList.scss';
 import './VideoList.scss';
 import VideoItem from '../Video/VideoItem';
-function VideoList({remain, handelClick}) {
+function VideoList({remain}) { //handelClick
     
     
     return (
@@ -9,13 +9,14 @@ function VideoList({remain, handelClick}) {
         <>
         <h3 className='videolist__header'>NEXT VIDEOS</h3>
         <div className='video__list'>
-           {remain.map((video) => 
+           {remain.map((videoremain) => 
             <VideoItem
-                key={video.id}
-                image= {video.image}
-                title= {video.title}
-               channel= {video.channel}
-               handel={() => handelClick(video)}
+                key={videoremain.id}
+                image= {videoremain.image}
+                title= {videoremain.title}
+               channel= {videoremain.channel}
+               video={videoremain}
+               //handel={() => handelClick(video)}
               
             />
             )}
