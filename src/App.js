@@ -14,6 +14,7 @@ function App (){
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/video" element={<Main />} />
         <Route path="/video/:idParams" element={<Main />} />
      </Routes>
      </BrowserRouter>
