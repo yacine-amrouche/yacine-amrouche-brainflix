@@ -18,6 +18,7 @@ function Main() {
       const response = await axios.get(
         `https://project-2-api.herokuapp.com/videos/${videoIdToDisplay}?api_key=7e7da151-3bfe-4861-bd6f-dde6568e13aa`
       );
+      console.log(response.data)
       setSelectedVideo(response.data);
     };
     getVideos();
