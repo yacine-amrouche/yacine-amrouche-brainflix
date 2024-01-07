@@ -1,6 +1,7 @@
 import './UploadPage.scss';
 import uploadVideo from '../../Assets/Images/Upload-video-preview.jpg'
 import publish from '../../Assets/Icons/publish.svg'
+import { Link } from 'react-router-dom';
 
 function UploadPage(){
     return(
@@ -24,10 +25,10 @@ function UploadPage(){
                 </div>
         </div>        
         <div className='form__btn'>
-                                <button className='form__button'>
+                            <Link to="/submitpage" ><button className='form__button'>
                                     <img src={publish} alt='user plus' className='btn--img'></img>
                                     PUBLISH
-                                </button>
+                                </button></Link> 
                                 <button className='form__button--cancel'>CANCEL</button>
                
         </div>

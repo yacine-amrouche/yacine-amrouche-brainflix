@@ -19,7 +19,7 @@ function App (){
         <Route path="/" element={<Main />} />
         <Route path="/video" element={<Main />} />
         <Route path="/uploadpage" element={<UploadPage />} />
-        <Route path="/SubmitPage" element={<SubmitPage />} />
+        <Route path="/submitpage" element={<SubmitPage />} />
         <Route path="/video/:idParams" element={<Main />} />
      </Routes>
      </BrowserRouter>

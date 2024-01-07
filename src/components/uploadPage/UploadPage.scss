@@ -131,8 +131,13 @@
         margin-right: 10rem;
     }
     .form__button{
+        @include desktop{
+            width: 12vw;
+            height: 8vh;
+        } 
         @include tablet{
-            width: 25%;
+            width: 20vw;
+            height: 8vh;
         } 
     }
 

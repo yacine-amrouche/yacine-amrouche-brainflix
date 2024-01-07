@@ -1,0 +1,25 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixin" as *;
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    @include font-face;
+}
+.sumbit{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.submit__img{
+    width: 20vw;
+    height: 20vh;
+}
+.submit__header{
+    font-weight: 700;
+}
+.submit__info{
+    font-size: 25px;
+    font-weight: 400;
+}
