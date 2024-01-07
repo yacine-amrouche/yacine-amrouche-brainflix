@@ -136,7 +136,7 @@
         justify-content: center;
         align-items: center;
         font-size: 25px;
-        font-weight: bold;
+        @include font-face-bold;
         margin-bottom: 1rem;
         margin-top: 2rem;
         @include mobile-min{

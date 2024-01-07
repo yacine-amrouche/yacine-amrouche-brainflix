@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <img src={logo} alt="user logo" className="header__logo"></img>
+     <Link to="/"> <img src={logo} alt="user logo" className="header__logo"></img></Link>
       <div className="header__container">
             <div className="header__container--search">
                   <img className="search--img" src={search} alt="user-search"></img>

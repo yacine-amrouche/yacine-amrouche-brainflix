@@ -4,6 +4,12 @@
     url("../../Assets/Font/Alternative\ files/AvenirNextLTPro.ttf") format("truetype");
         
 }
+@mixin font-face-bold{
+    font-family: 'avenir next';
+    src: url("../../Assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"),
+    url("../../Assets/Font/Alternative\ files/AvenirNextLTPro.ttf") format("truetype");
+        
+}
 @mixin mobile{
     @media (max-width: 767px){
         @content;
