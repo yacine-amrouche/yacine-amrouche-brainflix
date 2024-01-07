@@ -11,13 +11,13 @@ function App (){
   
   return (
     <>
-    <Header />
+  
     <BrowserRouter>
+    <Header />
     <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/video" element={<Main />} />
-        <Route path="/upload" element={<UploadPage />} />
-
+        <Route path="/uploadpage" element={<UploadPage />} />
         <Route path="/video/:idParams" element={<Main />} />
      </Routes>
      </BrowserRouter>
