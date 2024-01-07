@@ -43,6 +43,7 @@
     @include tablet{
         background-color: $brainflix-black2;
         width: 100%;
+        margin-top: -1.1rem;
        
     }
     @include desktop{

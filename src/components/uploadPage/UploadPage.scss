@@ -5,33 +5,57 @@
     text-decoration: none;
     @include font-face;
 }
+.header{
+    border-bottom: 3px solid $mercury;
+    padding-bottom: 1rem;
+}
 .upload{
    margin-top: 1rem;
+   @include desktop{
+    display: flex;
+    border-top: 1px solid $mercury;
+    margin-left: 10rem;
+    margin-right: 10rem;
+   }
    &__heading{
     color: $brainflix-black1;
     padding-left: 2rem;
     padding-top: 2rem;
     font-size: 45px;
     font-weight: 600;
-    border-top: 3px solid $mercury;
+    
     @include tablet{
-       
         padding-top: 4rem;
         padding-bottom: 2rem;
+    }
+    @include desktop{
+       margin-top: 0rem;
+       margin-bottom: 0rem;
+       margin-left: 9rem;
+       margin-right: 10rem;
     }
   
    }
    &__img{
-   
+    @include desktop{
+        width: 50%;
+       }
     .img--heading{
         color: $silver;
         font-size: 24px;
          font-weight: 600;      
          margin-left: 2rem;
          @include tablet{
-            border-top: 3px solid $mercury;
+            border-top: 1px solid $mercury;
             padding-top: 2rem;
             padding-bottom: -3rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+        @include desktop{
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            border-top: 0px;
         }
     }
     .img--image{
@@ -42,14 +66,28 @@
         @include tablet{
             width: 50%;
         }
+        @include desktop{
+            width: 100%;
+            padding: 0;
+            height: 49vh;
+            
+        }
     }
     }
 }
 .upload__form{
+    @include desktop{
+        width: 50%;
+       }
+    
     &--main{
         margin-top: 1rem;
         margin-left: 2rem;
         padding-right: 2rem;
+        @include desktop{
+           padding: 0rem;
+           }
+       
         .form__titel{
             color: $silver;
             font-size: 24px;
@@ -68,7 +106,7 @@
         .form__input{
             width: 100%;
             @include tablet{
-                height: 160px;
+                height: 160px;            
             }
         }
     }
@@ -76,16 +114,23 @@
 .form__btn{
     margin-top: 1rem;
     margin-left: 2rem;
-    padding-right: 2rem;
+    margin-right: 2rem;
+  
     @include tablet{
         display: flex;
         flex-direction: row-reverse;
-
+        align-items: center;
+        border-top: 1px solid $mercury;
+        padding-top: 2rem;
+        margin-top: 3rem;
+    }
+    @include desktop{
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
     .form__button{
         @include tablet{
             width: 25%;
-    
         } 
     }
 
@@ -105,3 +150,4 @@
         }
     }
 }
+
