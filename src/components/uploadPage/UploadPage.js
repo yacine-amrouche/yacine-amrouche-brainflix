@@ -34,10 +34,10 @@ function UploadPage(){
                 <div className='upload__form'>
                         <form className='upload__form--main'onSubmit={handelSubmit} >
                                 <p className='form__titel'>TITLE YOUR VIDEO</p>
-                                <input value={title} onChange={(e) => setTitel(e.target.value)} className='form__input--titel' placeholder='Add a title to your video'>
+                                <input value={channel} onChange={(e) => setChannel(e.target.value)} className='form__input--titel' placeholder='Add a title to your video'>
                                 </input>
                                 <p className='form__titel'>ADD A VIDEO DESCRIPTION</p>
-                                <input value={channel} onChange={(e) => setChannel(e.target.value)} className='form__input' placeholder='Add a description to your video'>
+                                <input value={title} onChange={(e) => setTitel(e.target.value)} className='form__input' placeholder='Add a description to your video'>
                                 </input>
                             
                         </form>
