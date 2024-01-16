@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./VideoList.scss";
-import VideoItem from "../Video/VideoItem";
+import VideoItem from "../videoItem/VideoItem";
 
 function VideoList({ selectedVideoId }) {
   const [videos, setVideos] = useState([]);
@@ -9,7 +9,7 @@ function VideoList({ selectedVideoId }) {
   useEffect(() => {
     const getVideos = async () => {
       const response = await axios.get(
-        `https://project-2-api.herokuapp.com/videos/?api_key=7e7da151-3bfe-4861-bd6f-dde6568e13aa`
+        `http://localhost:8080/videos`
       );
       setVideos(response.data);
     };

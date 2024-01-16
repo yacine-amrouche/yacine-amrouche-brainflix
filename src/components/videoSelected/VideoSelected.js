@@ -1,4 +1,4 @@
-import Video from "../Video/Video";
+import Video from "../video/Video";
 import CommentsForm from "../CommentsForm/CommentsForm";
 import CommentsList from "../ CommentsList/CommentsList";
 
